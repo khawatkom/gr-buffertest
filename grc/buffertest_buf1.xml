@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<block>
+  <name>buf1</name>
+  <key>buffertest_buf1</key>
+  <category>buffertest</category>
+  <import>import buffertest</import>
+  <make>buffertest.buf1()</make>
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
